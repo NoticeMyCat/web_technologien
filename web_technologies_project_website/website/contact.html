@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volleyballverein ATV Schladming</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact-form.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+
+                <a href="home.html"><img
+                        src="https://www.atv-schladming.at/wp-content/uploads/2021/05/logo-atv-schladming-1.png"
+                        alt="Logo ATV Schladming" id="logo-header">
+                </a>
+                <li><a href="home.html">Startseite</a></li>
+                <li><a href="teams.html">Teams und Spielpläne</a></li>
+                <li><a href="aboutUs.html">Über Uns</a></li>
+                <li><a href="membership.html">Mitgliedschaft</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>ATV Schladming</h1>
+        <h2>Kontaktiere Uns!</h2>
+        <p>Du willst vielleicht mehr über den Verein herausfinden oder sogar selber in den Sport einsteigen? Vielleicht
+            bist du momentan auf der Suche nach einem neuen Team?</p>
+        <p> Hier kannst du alle deine Fragen stellen! </p>
+
+        <form action="process_form.php" method="post">
+            <div class="anfrage-form">
+                <label for="anfrage">Anfrage</label>
+                <input type="checkbox" id="herrenteam" name="anfrage" value="Herrenteam" checked>
+                <label for="herrenteam">Herrenteam</label>
+                <input type="checkbox" id="damenteam" name="anfrage" value="Damenteam">
+                <label for="damenteam">Damenteam</label>
+            </div>
+            <div class="nachname-form">
+                <label for="nachname">Nachname</label>
+                <input type="text" id="nachname" name="nachname" required>
+            </div>
+            <div class="vorname-form">
+                <label for="vorname">Vorname</label>
+                <input type="text" id="vorname" name="vorname" required>
+            </div>
+            <div class="email-form">
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="nachricht-form">
+                <label for="message">Nachricht</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" id="submit-button" disabled>Senden</button>
+        </form>
+    </main>
+
+    <footer>
+        <div id="footer-left">
+            <h2>Kontakt</h2>
+            <br />
+            <p>Allgemeiner Turnverein Schladming</p>
+            <p>Europlatz 800</p>
+            <p>8970 Schladming</p>
+            <br />
+            <p>info@atv-schladming.at</p>
+        </div>
+
+        <div id="footer-center">
+            <h2>Folge Uns</h2>
+            <br />
+            <div>
+                <a href="https://www.facebook.com/atvschladmingofficial/" target="_blank"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
+                        alt="Icon Facebook" id="icon-facebook">
+                </a>
+                <a href="https://www.instagram.com/atv_schladming/" target="_blank"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png?20200512141346"
+                        alt="Icon Instagram" id="icon-instagram">
+            </div>
+        </div>
+
+        <div id="footer-right">
+            <a href="home.html"><img
+                    src="https://www.atv-schladming.at/wp-content/uploads/2021/05/logo-atv-schladming-1.png"
+                    alt="Logo ATV Schladming" id="logo-footer">
+            </a>
+            <p>&copy; 2023 Volleyballverein ATV Schladming</p>
+        </div>
+    </footer>
+</body>
+
+</html>

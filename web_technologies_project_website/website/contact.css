@@ -1,0 +1,59 @@
+/* Form Styles */
+form {
+    font-size: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    line-height: 2;
+}
+
+/* Stil für Labels */
+#anfrage-form,
+#nachname-form,
+#vorname-form,
+#email-form,
+#nachricht-form,
+#senden-form {
+    display: block;
+}
+
+label {
+    display: inline-block;
+    margin-right: 60px;
+    font-weight: bold;
+}
+
+label[for="herrenteam"],
+label[for="damenteam"] {
+    font-weight: normal;
+}
+
+/* Checkbox-Stil */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    /* Die Breite auf 100% setzen, um die Textboxen über die gesamte Container-Breite zu erstrecken */
+    height: 50px;
+}
+
+#nachname,
+#vorname,
+#email,
+#message {
+    font-size: 20px;
+}
+
+#message {
+    height: 200px;
+}
+
+#submit-button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 100px;
+}

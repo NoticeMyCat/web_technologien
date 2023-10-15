@@ -1,0 +1,20 @@
+#trainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#image-trainer {
+    max-height: 300px;
+    max-width: 200px;
+    margin-right: 50px;
+}
+
+#trainer-speech {
+    flex: 1;
+}
+
+#trainer-name {
+    font-weight: bold;
+    display: block;
+    flex: 0;
+}
