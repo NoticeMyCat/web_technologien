@@ -3,14 +3,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
+    position: relative;
 }
 
 /* Hauptbild */
 .main-image {
-    max-width: 80%;
-    /* Begrenzen Sie die maximale Breite auf die verfügbare Anzeigefläche */
-    max-height: 70vh;
+    max-width: 100%;
+    max-height: 100vh;
     width: auto;
     height: auto;
     display: block;
@@ -23,13 +23,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    margin-bottom: 100px;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
 }
 
 .thumbnail {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 80px;
+    max-height: 80px;
     margin: 10px;
     cursor: pointer;
     opacity: 0.7;
@@ -40,22 +40,30 @@
     opacity: 1;
 }
 
-/* Pfeile für vorheriges und nächstes Bild */
-.prev-image,
-.next-image {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    font-size: 24px;
-    margin-left: 200px;
-    margin-right: 200px;
+@media (max-width: 1024px) {
+    main {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .thumbnails {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .thumbnails .thumbnail {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .main-image {
+        max-height: 60vh;
+    }
 }
 
-.prev-image {
-    left: 15px;
-}
-
-.next-image {
-    right: 15px;
+@media (max-width: 1024px) {
+    main {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }

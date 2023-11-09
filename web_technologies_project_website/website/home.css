@@ -1,22 +1,22 @@
 main {
-    padding-left: 500px;
-    padding-right: 500px;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 h1 {
-    background-image: url('C:/Users/43677/Documents/FH-Dokumente/3.Semester/Web_Technologien/web_technologies_project_website/pictures/Bild_1.jpg');
-    background-size: contain;
-    background-size: 100% 100%;
+    background-image: url('../pictures/Bild_1.jpg');
+    opacity: 0.9;
+    background-size: cover;
     background-position: center;
-    color: #fff;
+    color: black;
     text-align: center;
-    padding: 20px;
-    margin: 0;
+    padding: 15%;
+    margin: 10%;
     font-style: italic;
-    font-size: 100px;
-    width: 100%;
-    height: 600px;
-    margin-top: 50px;
+    font-size: 300%;
+    font-weight: 900;
+    height: auto;
+    max-width: 100%;
 }
 
 h3 {
@@ -24,20 +24,20 @@ h3 {
 }
 
 hr {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 #countdown {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     text-align: center;
     color: #fff;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .countdown-item,
@@ -51,36 +51,120 @@ hr {
 .countdown-number {
     background-color: #002648;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 20px;
     margin-right: 10px;
 }
 
 .countdown-label {
-    font-size: 18px;
+    font-size: 14px;
     color: #002648;
 }
 
 .colon {
     color: #002648;
-    font-size: 30px;
+    font-size: 20px;
     align-self: flex-start;
 }
-
 
 .button-more {
     background-color: #002648;
     font-weight: bold;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
 }
 
 #image-news {
-    max-width: 80%;
+    max-width: 100%;
     display: block;
     margin: 0 auto;
+}
+
+@media (max-width: 1368px) {
+    main {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    h1 {
+        font-size: 250%;
+    }
+
+    hr {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 1024px) {
+    main {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    h1 {
+        font-size: 180%;
+    }
+
+    hr {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 868px) {
+    main {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    h1 {
+        font-size: 150%;
+    }
+
+    hr {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 668px) {
+    main {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    h1 {
+        font-size: 120%;
+    }
+
+    .countdown-item {
+        margin: auto;
+    }
+
+    .countdown-number {
+        font-size: 14px;
+    }
+
+    .countdown-label {
+        font-size: 12px;
+    }
+
+    .colon {
+        font-size: 18px;
+    }
+
+    #countdown {
+        margin-top: 10px;
+    }
 }

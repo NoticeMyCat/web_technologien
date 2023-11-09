@@ -1,9 +1,15 @@
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
 .kader {
+    padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* Vier Spalten */
     gap: 20px;
-    /* Abstand zwischen den Spalten und Zeilen */
+    justify-content: center;
 }
 
 .player {
@@ -12,17 +18,39 @@
     box-sizing: border-box;
 }
 
-/* Setze die Breite und Höhe für die Bilder */
 .player img {
     width: 150px;
     height: 200px;
 }
 
-/* Mache den Text innerhalb der <p>-Elemente fett */
 .player p {
     font-weight: bold;
 }
 
-h3 {
-    text-align: center;
+@media (max-width: 1024px) {
+    main {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .kader {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .kader {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .player {
+        padding: 10px;
+    }
 }

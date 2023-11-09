@@ -1,8 +1,8 @@
 /* Form Styles */
 form {
     font-size: 20px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
     line-height: 2;
 }
 
@@ -36,7 +36,6 @@ input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    /* Die Breite auf 100% setzen, um die Textboxen über die gesamte Container-Breite zu erstrecken */
     height: 50px;
 }
 
@@ -56,4 +55,47 @@ textarea {
     height: 50px;
     font-size: 20px;
     margin-bottom: 100px;
+}
+
+/*Responsive Webdesign*/
+@media (max-width: 1368px) {
+    main {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    form {
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 1.5;
+    }
+
+    #nachname,
+    #vorname,
+    #email,
+    #message {
+        font-size: 16px;
+    }
+
+    #submit-button {
+        width: 100px;
+        height: 25px;
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    #herrenteam,
+    #damenteam {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    #message {
+        height: 100px;
+    }
+
 }

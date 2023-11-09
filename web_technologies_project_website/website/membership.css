@@ -1,8 +1,9 @@
+/* Ursprüngliche Styles für die Bilder und den Button beibehalten */
 .image-left {
     text-align: center;
     float: left;
     width: 33.33%;
-    padding-left: 150px;
+    padding-left: 20px;
     box-sizing: border-box;
 }
 
@@ -11,21 +12,22 @@
     display: inline-block;
     width: 33.33%;
     vertical-align: middle;
+
 }
 
 .image-right {
     text-align: center;
     float: right;
     width: 33.33%;
-    padding-right: 150px;
+    padding-right: 20px;
     box-sizing: border-box;
 }
 
 #image-equipment,
 #image-facility,
 #image-coaching {
-    height: 300px;
-    width: 300px;
+    height: 280px;
+    width: 280px;
 }
 
 #button-anmeldeformular {
@@ -42,4 +44,64 @@
     cursor: pointer;
     margin-top: 30px;
     margin-bottom: 100px;
+}
+
+/* Responsive Webdesign */
+@media (max-width: 1468px) {
+    main {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+@media (max-width: 1368px) {
+    main {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 1024px) {
+    main {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 968px) {
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #image-equipment,
+    #image-facility,
+    #image-coaching {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    /* Anpassungen für die Bilder */
+    .image-left,
+    .image-middle,
+    .image-right {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    /* Button zentrieren und den Abstand anpassen */
+    #button-anmeldeformular {
+        margin: 30px auto;
+        display: block;
+    }
 }

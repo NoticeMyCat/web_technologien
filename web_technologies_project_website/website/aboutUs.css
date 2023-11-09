@@ -1,6 +1,7 @@
 #trainer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #image-trainer {
@@ -17,4 +18,34 @@
     font-weight: bold;
     display: block;
     flex: 0;
+}
+
+/*Responsive Webdesign*/
+@media (max-width: 1368px) {
+    main {
+        padding-left: 50px;
+        padding-right: 50px;
+        align-items: center;
+    }
+
+    #image-trainer {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #trainer {
+        width: 100%;
+        overflow: hidden;
+        flex: none;
+        text-align: inherit;
+        justify-content: center;
+    }
 }
