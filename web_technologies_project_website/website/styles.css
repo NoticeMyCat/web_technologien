@@ -19,7 +19,7 @@ header {
     color: white;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
     object-fit: contain;
     height: auto;
     min-height: 50px;
@@ -111,7 +111,7 @@ nav .icons {
         justify-content: center;
         align-items: center;
         background: #002648;
-        transition: top 1s ease 0s;
+        transition: top 1s ease 0.1s;
         display: none;
         margin: 0;
         padding: 0;
@@ -345,9 +345,9 @@ footer {
 
 /* nav Anpassungen für Handy im Querformat */
 @media only screen and (max-width: 800px) and (max-height: 768px) and (orientation: landscape) {
-    .nav-list a {
-        padding: 0.5rem;
-        font-size: 15px;
+    nav .nav-list li {
+        font-size: 10px;
+        padding: 2px 0;
     }
 
 }
