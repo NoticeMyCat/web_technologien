@@ -170,7 +170,6 @@ footer {
     overflow: hidden;
     line-height: 0.2;
     white-space: nowrap;
-    /* Fügt den Text in einer Zeile ohne Zeilenumbruch ein */
 }
 
 #footer-left {
@@ -344,7 +343,7 @@ footer {
 }
 
 /* nav Anpassungen für Handy im Querformat */
-@media only screen and (max-width: 800px) and (orientation: landscape) {
+@media (orientation: landscape) {
     nav .nav-list {
         flex-direction: row;
         justify-content: space-between;
@@ -352,7 +351,7 @@ footer {
         height: auto;
         position: relative;
         display: flex;
-        font-size: small;
+        font-size: 12px;
     }
 
     nav .nav-list li {
@@ -362,8 +361,8 @@ footer {
     .openMenu,
     .closeMenu,
     .icons,
-    #logo-header,
-    #logo {
+    nav .logo,
+    #logo-hamburger {
         display: none;
     }
 }
