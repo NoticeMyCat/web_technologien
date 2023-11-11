@@ -19,7 +19,7 @@ header {
     color: white;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 10000;
     object-fit: contain;
     height: auto;
     min-height: 50px;
@@ -106,7 +106,7 @@ nav .icons {
         top: 0px;
         right: 0px;
         left: 0px;
-        z-index: 1000;
+        z-index: 10000;
         flex-direction: column;
         justify-content: center;
         align-items: center;
