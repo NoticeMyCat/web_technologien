@@ -102,7 +102,7 @@ nav .icons {
 
     nav .nav-list {
         height: 100vh;
-        position: relative;
+        position: fixed;
         top: 0px;
         right: 0px;
         left: 0px;
@@ -340,28 +340,26 @@ footer {
     #footer-right p {
         float: none;
     }
+
 }
 
 /* nav Anpassungen für Handy im Querformat */
-@media (orientation: landscape) {
-    nav .nav-list {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        height: auto;
-        position: relative;
+@media screen and (orientation: landscape) and (max-height: 600px) {
+    .nav-list {
         display: flex;
-        font-size: 12px;
-    }
-
-    nav .nav-list li {
-        margin-bottom: 0;
+        align-self: flex-start;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1rem;
+        box-sizing: border-box;
     }
 
     .openMenu,
     .closeMenu,
     .icons,
-    nav .logo,
+    .logo,
     #logo-hamburger {
         display: none;
     }
