@@ -114,6 +114,7 @@ nav .icons {
         transition: top 1s ease 0s;
         display: none;
         margin: 0;
+        padding: 0;
     }
 
     nav .nav-list li {
@@ -342,5 +343,39 @@ footer {
     #footer-right p {
         float: none;
     }
+}
 
+@media only screen and (max-width: 800px) and (orientation: landscape) {
+    nav .nav-list {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+    }
+
+    nav .nav-list li {
+        margin-bottom: 0;
+    }
+
+    nav .nav-list .closeMenu,
+    .icons i {
+        display: none;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    nav .icons {
+        display: inline-block;
+    }
+
+    nav .openMenu {
+        display: none;
+    }
+
+    nav .nav-list {
+        display: flex;
+    }
 }
