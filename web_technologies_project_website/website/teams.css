@@ -1,25 +1,38 @@
-h1,
-h2,
-h3 {
+main {
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-table, th, td {
-    border: 1px solid black;
+table,
+th,
+td {
+    border: 2px solid black;
     border-collapse: collapse;
-    padding: 5px;
+    padding: 15px;
 }
 
 table {
-	margin-bottom: 20px;
+
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+th {
+    background-color: rgb(21, 156, 209);
 }
 
 td a {
     margin-right: 5px;
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 .kader {
+    padding-left: 15%;
+    padding-right: 15%;
     padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -48,6 +61,15 @@ td a {
         padding-right: 50px;
     }
 
+    th,
+    td {
+        padding: 12px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
     .kader {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
@@ -58,6 +80,25 @@ td a {
     main {
         padding-left: 20px;
         padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 11px;
+    }
+
+    /* Verstecke Zeit- und Karte-Spalten */
+    th:nth-child(2),
+    td:nth-child(2),
+    th:nth-child(6),
+    td:nth-child(6) {
+        display: none;
     }
 
     .kader {
