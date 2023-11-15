@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="teams.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
         integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="scraper.js"></script>
 </head>
 
 <body>
@@ -120,92 +122,19 @@
         </div>
 
         <h2>Spieltermine</h2>
+		<div id="tableData"></div>
+		<!--
         <h3>Herren</h3>
         <div id="Termine-Herren">
-
-
-            <p id="scraperOutput"></p>
-
-
-            <script src="scrapers.js"></script>
-
-
-
-            <!-- Hier werden die Spiele angezeigt -->
             <p>ATV Schladming - Gegnerteam</p>
             <p>Datum - Zeit</p>
-
-
-            <div id="tableData"></div>
-
-
-            <!--<script>
-                //const puppeteer = require('puppeteer');
-                import puppeteer from "puppeteer";
-
-                async function scrapeTableData() {
-                    const browser = await puppeteer.launch();
-                    console.log("trace 1");
-                    const page = await browser.newPage();
-
-                    try {
-                        console.log("trace 2");
-
-                        await page.goto('https://svv.volleynet.at/Termine/32369');
-
-                        console.log("trace 3");
-
-                        // Hier wird erwartet, dass die Tabelle mit der Klasse "table" existiert.
-                        // Du solltest den tatsächlichen Selector der Tabelle anpassen.
-                        await page.waitForSelector('#content_container > form:nth-child(1) > table:nth-child(3)');
-
-                        // Extrahiere Daten aus der Tabelle
-                        const tableData = await page.evaluate(() => {
-                            const table = document.querySelector('#content_container > form:nth-child(1) > table:nth-child(3)');
-                            const rows = table.querySelectorAll('tr');
-                            const data = [];
-
-                            rows.forEach(row => {
-                                const columns = row.querySelectorAll('td');
-                                const rowData = [];
-
-                                columns.forEach(column => {
-                                    // Hier kannst du die Logik für die Extraktion der Daten in jeder Zelle anpassen.
-                                    // In diesem Beispiel nehmen wir den Textinhalt der Zelle und entfernen Leerzeichen am Anfang und Ende.
-                                    const cellData = column.textContent.trim();
-                                    rowData.push(cellData);
-                                });
-
-                                data.push(rowData);
-                            });
-
-                            return data;
-                        });
-
-                        console.log('Daten aus der Tabelle:');
-                        console.log(tableData);
-
-                    } catch (error) {
-                        console.error('Fehler beim Scrapen der Website:', error);
-                    } finally {
-                        await browser.close();
-                    }
-                }
-
-
-                scrapeTableData();
-            </script>-->
-
-            <button id="test-button">Test</button>
-
-            <!--<script src="scrapers.js"></script>-->
         </div>
         <h3>Damen</h3>
         <div id="Termine-Damen">
-            <!-- Hier werden die Spiele angezeigt -->
             <p>ATV Schladming - Gegnerteam</p>
             <p>Datum - Zeit</p>
         </div>
+		-->
     </main>
 
     <footer>
