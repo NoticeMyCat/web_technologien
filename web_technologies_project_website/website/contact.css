@@ -1,5 +1,6 @@
 /* Form Styles */
 form {
+    /* Formulargestaltung: Schriftgröße, links und rechts 10% Polsterung und Zeilenhöhe 2 */
     font-size: 20px;
     padding-left: 10%;
     padding-right: 10%;
@@ -13,10 +14,12 @@ form {
 #email-form,
 #nachricht-form,
 #senden-form {
+    /* Anzeige der Formularelemente als Block */
     display: block;
 }
 
 label {
+    /* Label-Stil: Inline-Block-Anzeige, rechter Abstand 60px und Fettschrift */
     display: inline-block;
     margin-right: 60px;
     font-weight: bold;
@@ -24,17 +27,20 @@ label {
 
 label[for="herrenteam"],
 label[for="damenteam"] {
+    /* Anpassungen für spezifische Labels: Fettschrift aufheben */
     font-weight: normal;
 }
 
 /* Checkbox-Stil */
 input[type="checkbox"] {
+    /* Checkbox-Stil: Rechter Abstand 10px */
     margin-right: 10px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
+    /* Eingabefeld-Stil: Volle Breite und Höhe 50px */
     width: 100%;
     height: 50px;
 }
@@ -43,14 +49,17 @@ textarea {
 #vorname,
 #email,
 #message {
+    /* Anpassungen für bestimmte Eingabefelder: Schriftgröße 20px */
     font-size: 20px;
 }
 
 #message {
+    /* Anpassungen für das Nachrichtenfeld: Höhe 200px */
     height: 200px;
 }
 
 #submit-button {
+    /* Senden-Button-Stil: Breite 200px, Höhe 50px, Schriftgröße 20px und unterer Abstand 20px */
     width: 200px;
     height: 50px;
     font-size: 20px;
@@ -58,14 +67,17 @@ textarea {
 }
 
 iframe {
+    /* Anpassungen für eingebettete IFrames: Volle Breite, zentrierte Ausrichtung und unterer Abstand 100px */
     width: 100%;
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
 }
 
-/*Responsive Webdesign*/
+/* Responsive Webdesign */
 @media (max-width: 1368px) {
+
+    /* Media Query für Bildschirme bis 1368px Breite: Links und rechts 50px Polsterung für den Hauptinhalt */
     main {
         padding-left: 50px;
         padding-right: 50px;
@@ -73,8 +85,10 @@ iframe {
 }
 
 @media (max-width: 768px) {
+    /* Media Query für Bildschirme bis 768px Breite */
 
     form {
+        /* Formulargestaltung für kleine Bildschirme: Schriftgröße 16px, links und rechts 20px Polsterung und Zeilenhöhe 1.5 */
         font-size: 16px;
         padding-left: 20px;
         padding-right: 20px;
@@ -85,10 +99,12 @@ iframe {
     #vorname,
     #email,
     #message {
+        /* Anpassungen für bestimmte Eingabefelder auf kleinen Bildschirmen: Schriftgröße 16px */
         font-size: 16px;
     }
 
     #submit-button {
+        /* Senden-Button-Anpassungen für kleine Bildschirme: Breite 100px, Höhe 25px, Schriftgröße 16px und unterer Abstand 10px */
         width: 100px;
         height: 25px;
         font-size: 16px;
@@ -97,12 +113,13 @@ iframe {
 
     #herrenteam,
     #damenteam {
+        /* Anpassungen für Checkboxen auf kleinen Bildschirmen: Inline-Anzeige und rechter Abstand 10px */
         display: inline;
         margin-right: 10px;
     }
 
     #message {
+        /* Anpassungen für das Nachrichtenfeld auf kleinen Bildschirmen: Höhe 100px */
         height: 100px;
     }
-
 }

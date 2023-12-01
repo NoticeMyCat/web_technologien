@@ -1,4 +1,5 @@
 main {
+    /* Hauptinhalt-Stil: Links und rechts 10% Polsterung, zentrierte Ausrichtung und Textzentrierung */
     padding-left: 10%;
     padding-right: 10%;
     justify-content: center;
@@ -9,28 +10,31 @@ main {
 table,
 th,
 td {
+    /* Tabellen-Stil: 2px schwarze Umrandung, Zellenzusammenführung und 15px Innenpolsterung */
     border: 2px solid black;
     border-collapse: collapse;
     padding: 15px;
 }
 
 table {
-
+    /* Tabellenbreite auf 100% und unterer Abstand 20px */
     width: 100%;
     margin-bottom: 20px;
-
 }
 
 th {
+    /* Tabellenkopf-Stil: Hintergrundfarbe in RGB(21, 156, 209) */
     background-color: rgb(21, 156, 209);
 }
 
 td a {
+    /* Verweise in Tabellenzellen-Stil: Rechter Abstand 5px und Unterstreichung */
     margin-right: 5px;
     text-decoration: underline;
 }
 
 .kader {
+    /* Kader-Stil: Links und rechts 15% Polsterung, oberer Abstand 20px, Rasteranzeige mit 4 gleichgroßen Spalten und 20px Abstand zwischen den Elementen */
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 20px;
@@ -41,43 +45,55 @@ td a {
 }
 
 .player {
+    /* Spieler-Stil: Textzentrierung, 20px Innenpolsterung und Box-Modell-Berechnung */
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
 }
 
 .player img {
+    /* Spielerbild-Stil: Breite 150px, Höhe 200px */
     width: 150px;
     height: 200px;
 }
 
 .player p {
+    /* Spieler-Text-Stil: Fettschrift */
     font-weight: bold;
 }
 
 @media (max-width: 1024px) {
+    /* Media Query für Bildschirme bis 1024px Breite */
+
     main {
+        /* Hauptinhalt-Anpassungen: Links und rechts 50px Polsterung */
         padding-left: 50px;
         padding-right: 50px;
     }
 
     th,
     td {
+        /* Tabellenzellen-Anpassungen: 12px Innenpolsterung */
         padding: 12px;
     }
 
     table {
+        /* Tabellen-Anpassungen: Schriftgröße 14px */
         font-size: 14px;
     }
 
     .kader {
+        /* Kader-Anpassungen: Rasteranzeige mit 3 gleichgroßen Spalten und 10px Abstand zwischen den Elementen */
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
 }
 
 @media (max-width: 768px) {
+    /* Media Query für Bildschirme bis 768px Breite */
+
     main {
+        /* Hauptinhalt-Anpassungen: Links und rechts 20px Polsterung, Flex-Richtung ändern */
         padding-left: 20px;
         padding-right: 20px;
         display: flex;
@@ -86,10 +102,12 @@ td a {
 
     th,
     td {
+        /* Tabellenzellen-Anpassungen: 10px Innenpolsterung */
         padding: 10px;
     }
 
     table {
+        /* Tabellen-Anpassungen: Schriftgröße 11px */
         font-size: 11px;
     }
 
@@ -98,15 +116,18 @@ td a {
     td:nth-child(2),
     th:nth-child(6),
     td:nth-child(6) {
+        /* Pseudo-Klassen für das Ausblenden bestimmter Tabellenspalten */
         display: none;
     }
 
     .kader {
+        /* Kader-Anpassungen: Rasteranzeige mit 2 gleichgroßen Spalten und 10px Abstand zwischen den Elementen */
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
 
     .player {
+        /* Spieler-Anpassungen: 10px Innenpolsterung */
         padding: 10px;
     }
 }

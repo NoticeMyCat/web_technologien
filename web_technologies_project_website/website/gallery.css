@@ -1,5 +1,6 @@
 /* Stil für die Galerie */
 #main {
+    /* Galerie-Stil: Flexbox-Anzeige in der Mitte, Spaltenausrichtung, relative Positionierung */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,6 +10,7 @@
 
 /* Hauptbild */
 .main-image {
+    /* Hauptbild-Stil: Maximale Breite und Höhe 100%, automatische Breiten- und Höhenanpassung, Blockanzeige in der Mitte und unterer Abstand 20px */
     max-width: 100%;
     max-height: 100vh;
     width: auto;
@@ -20,6 +22,7 @@
 
 /* Miniaturbilder */
 .thumbnails {
+    /* Miniaturbilder-Stil: Flexbox-Anzeige in der Mitte, keine Umbruch, unterer Abstand 50px */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,6 +31,7 @@
 }
 
 .thumbnail {
+    /* Einzelne Miniatur-Stil: Maximale Breite und Höhe 80px, äußerer Abstand 10px, Zeiger als Zeiger, und anfängliche Transparenz */
     max-width: 80px;
     max-height: 80px;
     margin: 10px;
@@ -37,32 +41,42 @@
 }
 
 .thumbnail.active {
+    /* Aktive Miniatur-Stil: Volle Transparenz */
     opacity: 1;
 }
 
 @media (max-width: 1024px) {
+    /* Media Query für Bildschirme bis 1024px Breite */
+
     main {
+        /* Hauptinhalt-Anpassungen: Links und rechts 200px Polsterung */
         padding-left: 200px;
         padding-right: 200px;
     }
 
     .thumbnails {
+        /* Miniatur-Anpassungen: Flexbox-Anzeige in der Mitte, Umbruch aktivieren */
         justify-content: center;
         flex-wrap: wrap;
     }
 
     .thumbnails .thumbnail {
+        /* Einzelne Miniatur-Anpassungen: Maximale Breite und Höhe 100px */
         max-width: 100px;
         max-height: 100px;
     }
 
     .main-image {
+        /* Hauptbild-Anpassungen: Maximale Höhe 60vh */
         max-height: 60vh;
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+    /* Media Query für Bildschirme bis 768px Breite */
+
     main {
+        /* Hauptinhalt-Anpassungen: Links und rechts 50px Polsterung */
         padding-left: 50px;
         padding-right: 50px;
     }

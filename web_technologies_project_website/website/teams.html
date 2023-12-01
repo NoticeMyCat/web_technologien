@@ -4,25 +4,28 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volleyballverein ATV Schladming</title>
+    <title>Volleyballverein ATV Schladming</title> <!--Titel der Website-->
+    <!--Einbindungen von CSS / JS-->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="teams.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
         integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="scraper.js"></script>
-    <script src="scraperW.js"></script>
+    <script src="scraper.js"></script> <!--Herren-Termine Scraper-->
+    <script src="scraperW.js"></script> <!--Damen-Termine Scraper-->
 </head>
 
 <body>
     <header>
         <nav>
+            <!--Hamburger-Menu-->
             <div class="logo"><img
                     src="https://www.atv-schladming.at/wp-content/uploads/2021/05/logo-atv-schladming-1.png"
                     alt="Logo ATV Schladming" id="logo-hamburger">
             </div>
             <div class="openMenu"><i class="fa fa-bars"></i></div>
             <ul class="nav-list">
+                <!--Standardansicht-->
                 <a href="home.html" class="logo-header"><img
                         src="https://www.atv-schladming.at/wp-content/uploads/2021/05/logo-atv-schladming-1.png"
                         alt="Logo ATV Schladming">
@@ -50,6 +53,7 @@
         <h1>ATV Schladming</h1>
         <h2>1.Landesliga Herren</h2>
         <h3>Kaderspieler</h3>
+        <!--Bilder der Spieler & Position-->
         <div class="kader">
             <div class="player">
                 <img src="..\pictures\Herren_Khanh.png" alt="Khanh" id="Khanh">
@@ -85,12 +89,14 @@
             </div>
         </div>
 
+        <!--Scraper-Daten der Termine-->
         <h2>Spieltermine</h2>
         <h3>Herren</h3>
         <div id="tableDataHerren"></div>
 
         <h2>1.Landesliga Damen</h2>
         <h3>Kaderspieler</h3>
+        <!--Bilder der Spieler & Position-->
         <div class="kader">
             <div class="player">
                 <img src="..\pictures\Damen_Thalia.png" alt="Thalia" id="Thalia">
@@ -126,11 +132,13 @@
             </div>
         </div>
 
+        <!--Scraper-Daten der Termine-->
         <h2>Spieltermine</h2>
         <h3>Damen</h3>
         <div id="tableDataDamen"></div>
     </main>
 
+    <!--Footer-->
     <footer>
         <div id="footer-left">
             <h2>Kontakt</h2>

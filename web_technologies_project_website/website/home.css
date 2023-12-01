@@ -1,17 +1,23 @@
+/* Hauptinhalt-Stile */
 main {
+    /* Hauptinhalt-Anpassungen: Links und rechts 15% Polsterung */
     padding-left: 15%;
     padding-right: 15%;
 }
 
+/* Stile für h1 */
 h1 {
+    /* Hintergrundbild mit Opazität, vollständige Bildgröße und zentrierte Ausrichtung */
     background-image: url('../pictures/Bild_1.jpg');
     opacity: 0.9;
     background-size: cover;
     background-position: center;
+    /* Weißer Text, zentrierte Ausrichtung, Innenpolsterung und äußerer Abstand */
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 15%;
     margin: 10%;
+    /* Kursiv, 300% Schriftgröße, fett 900 */
     font-style: italic;
     font-size: 300%;
     font-weight: 900;
@@ -19,18 +25,24 @@ h1 {
     max-width: 100%;
 }
 
+/* Stile für h3 */
 h3 {
+    /* Zentrierte Ausrichtung */
     text-align: center;
 }
 
+/* Stile für hr */
 hr {
+    /* Oberer, unterer, rechter und linker Abstand 20px */
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
     margin-left: 20px;
 }
 
+/* Stile für #countdown */
 #countdown {
+    /* Flexbox-Anzeige in der Mitte, Ausrichtung der Elemente, Textfarbe und Schriftgröße */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,35 +52,46 @@ hr {
     font-size: 20px;
 }
 
+/* Stile für .countdown-item und .colon */
 .countdown-item,
 .colon {
+    /* Inline-Flex-Anzeige, Spaltenausrichtung und Abstand 10px */
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     margin: 10px;
 }
 
+/* Stile für .countdown-number */
 .countdown-number {
+    /* Hintergrundfarbe, Textfarbe, Innenpolsterung, abgerundete Ecken und Schriftgröße */
     background-color: #002648;
     color: #fff;
     padding: 10px 15px;
     border-radius: 10px;
     font-size: 20px;
+    /* Rechter Abstand 10px */
     margin-right: 10px;
 }
 
+/* Stile für .countdown-label und .colon */
 .countdown-label {
+    /* Schriftgröße und Farbe */
     font-size: 14px;
     color: #002648;
 }
 
 .colon {
+    /* Farbe und Schriftgröße */
     color: #002648;
     font-size: 20px;
+    /* Links ausgerichtet */
     align-self: flex-start;
 }
 
+/* Stile für .button-more */
 .button-more {
+    /* Hintergrundfarbe, fetter Text, weiße Farbe, Innenpolsterung, keine Grenze, abgerundete Ecken und Cursor als Zeiger */
     background-color: #002648;
     font-weight: bold;
     color: #fff;
@@ -78,23 +101,30 @@ hr {
     cursor: pointer;
 }
 
+/* Stile für #image-news */
 #image-news {
+    /* Maximale Breite 100%, Blockanzeige in der Mitte und äußerer Abstand 0 Auto */
     max-width: 100%;
     display: block;
     margin: 0 auto;
 }
 
+/* Media Queries für verschiedene Bildschirmgrößen */
+
 @media (max-width: 1368px) {
     main {
+        /* Hauptinhalt-Anpassungen: Links und rechts 150px Polsterung */
         padding-left: 150px;
         padding-right: 150px;
     }
 
     h1 {
+        /* Schriftgröße auf 250% reduzieren */
         font-size: 250%;
     }
 
     hr {
+        /* Oberer, unterer, rechter und linker Abstand erhöhen */
         margin-top: 25px;
         margin-bottom: 25px;
         margin-right: 50px;
@@ -104,15 +134,18 @@ hr {
 
 @media (max-width: 1024px) {
     main {
+        /* Hauptinhalt-Anpassungen: Links und rechts 15% Polsterung */
         padding-left: 15%;
         padding-right: 15%;
     }
 
     h1 {
+        /* Schriftgröße auf 180% reduzieren */
         font-size: 180%;
     }
 
     hr {
+        /* Oberer, unterer, rechter und linker Abstand erhöhen */
         margin-top: 25px;
         margin-bottom: 25px;
         margin-right: 50px;
@@ -122,15 +155,18 @@ hr {
 
 @media (max-width: 868px) {
     main {
+        /* Hauptinhalt-Anpassungen: Links und rechts 100px Polsterung */
         padding-left: 100px;
         padding-right: 100px;
     }
 
     h1 {
+        /* Schriftgröße auf 150% reduzieren */
         font-size: 150%;
     }
 
     hr {
+        /* Oberer, unterer, rechter und linker Abstand erhöhen */
         margin-top: 30px;
         margin-bottom: 30px;
         margin-right: 100px;
@@ -140,31 +176,38 @@ hr {
 
 @media (max-width: 668px) {
     main {
+        /* Hauptinhalt-Anpassungen: Links und rechts 30px Polsterung */
         padding-left: 30px;
         padding-right: 30px;
     }
 
     h1 {
+        /* Schriftgröße auf 120% reduzieren */
         font-size: 120%;
     }
 
+    /* Anpassungen für Countdown-Elemente */
     .countdown-item {
         margin: auto;
     }
 
     .countdown-number {
+        /* Schriftgröße auf 14px reduzieren */
         font-size: 14px;
     }
 
     .countdown-label {
+        /* Schriftgröße auf 12px reduzieren */
         font-size: 12px;
     }
 
     .colon {
+        /* Schriftgröße auf 18px erhöhen */
         font-size: 18px;
     }
 
     #countdown {
+        /* Oberer Abstand reduzieren */
         margin-top: 10px;
     }
 }

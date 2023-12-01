@@ -1,47 +1,55 @@
 #trainer {
+    /* Flex Container: Horizontale Ausrichtung, Umbruch bei Bedarf */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 #image-trainer {
+    /* Bildstyling: Maximale Höhe, maximale Breite, rechter Seitenabstand */
     max-height: 300px;
     max-width: 200px;
     margin-right: 50px;
 }
 
 #trainer-speech {
+    /* Flex-Element: Flexibler Raum einnehmen */
     flex: 1;
 }
 
 #trainer-name {
+    /* Stil für den Trainer-Namen: Fettschrift, als Block anzeigen, kein Flex-Wachstum */
     font-weight: bold;
     display: block;
     flex: 0;
 }
 
-/*Responsive Webdesign*/
+/* Responsive Webdesign für Bildschirme bis 1368px Breite */
 @media (max-width: 1368px) {
     main {
+        /* Hauptcontainer: Links und rechts 50px Padding, Zentrierung */
         padding-left: 50px;
         padding-right: 50px;
         align-items: center;
     }
 
     #image-trainer {
+        /* Bildstyling anpassen: Maximale Breite 100%, automatische Höhe */
         max-width: 100%;
         height: auto;
     }
-
 }
 
+/* Responsive Webdesign für Bildschirme bis 768px Breite */
 @media (max-width: 768px) {
     main {
+        /* Hauptcontainer: Links und rechts 20px Padding */
         padding-left: 20px;
         padding-right: 20px;
     }
 
     #trainer {
+        /* Trainercontainer: Volle Breite, kein Flex-Wachstum, Textausrichtung und Zentrierung */
         width: 100%;
         overflow: hidden;
         flex: none;

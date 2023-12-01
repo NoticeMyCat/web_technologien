@@ -1,5 +1,6 @@
 /* Allgemeine Styles */
 body {
+    /* Grundlegende Styles für den Body: Schriftgröße, Schriftart, Margin, Padding, Hintergrundfarbe und Textfarbe */
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -9,12 +10,14 @@ body {
 }
 
 a {
+    /* Link-Styling: Keine Unterstreichung, erbt die Farbe vom Elternelement */
     text-decoration: none;
     color: inherit;
 }
 
 /* Header Styles */
 header {
+    /* Header-Styling: Hintergrundfarbe, Textfarbe, Sticky-Position, Z-Index, Objektanpassung, Höhe, Mindesthöhe, Flex-Ausrichtung, Überlaufausblenden und Übergangseffekt */
     background-color: #002648;
     color: white;
     position: sticky;
@@ -29,6 +32,7 @@ header {
 }
 
 .nav-list {
+    /* Navigation-Styling: Flex-Container, Ausrichtung, Abstand, Listenstil, Ausrichtung und Schriftgröße */
     display: flex;
     align-self: flex-start;
     flex-direction: row;
@@ -40,6 +44,7 @@ header {
 }
 
 .nav-list a {
+    /* Link-Styling innerhalb der Navigation: Farbe, Fettschrift, Polsterung und Übergangseffekt */
     color: white;
     font-weight: bold;
     padding: 1rem;
@@ -48,10 +53,12 @@ header {
 }
 
 .nav-list a:hover {
+    /* Hover-Effekt für Links in der Navigation */
     background-color: #002D62;
 }
 
 nav .logo {
+    /* Logo-Styling in der Navigation: Polsterung, Rand, Objektanpassung und Anzeigeausblenden */
     padding-left: 20px;
     margin: 10px;
     object-fit: fill;
@@ -59,11 +66,13 @@ nav .logo {
 }
 
 #logo-hamburger {
+    /* Hamburger-Logo-Styling: Breite und Höhe festlegen */
     width: auto;
     height: 50px;
 }
 
 nav .openMenu {
+    /* Menü öffnen Symbol: Schriftgröße, Rand, Anzeigeausblenden, Cursor und Ausrichtung */
     font-size: 2rem;
     margin: 20px;
     display: none;
@@ -73,34 +82,42 @@ nav .openMenu {
 
 nav .nav-list .closeMenu,
 .icons i {
+    /* Schließen-Symbol und Icons: Schriftgröße, Anzeigeausblenden und Cursor */
     font-size: 2rem;
     display: none;
     cursor: pointer;
 }
 
 nav .icons {
+    /* Icons-Styling: Anzeigeausblenden */
     display: none;
 }
 
 .fa-facebook:hover {
+    /* Hover-Effekt für Facebook-Icon */
     color: rgb(0, 110, 255);
 }
 
 .fa-instagram:hover {
+    /* Hover-Effekt für Instagram-Icon */
     color: rgb(255, 0, 191);
 }
 
-
 @media (max-width: 800px) {
+    /* Media Query für Bildschirme bis 800px Breite */
+
     nav .logo {
+        /* Logo-Anzeige in der Navigation bei kleineren Bildschirmen */
         display: inline-flex;
     }
 
     .logo-header {
+        /* Ausblenden des Header-Logos bei kleineren Bildschirmen */
         display: none;
     }
 
     nav .nav-list {
+        /* Navigation-Styling für kleine Bildschirme: Volle Höhe, feste Position, Hintergrund, Übergangseffekt und Anzeigeausblenden */
         height: 100vh;
         position: fixed;
         top: 0px;
@@ -118,11 +135,13 @@ nav .icons {
     }
 
     nav .nav-list li {
+        /* Listenpunkt-Styling in der Navigation: Texttransformation und Polsterung */
         text-transform: uppercase;
         padding: 20px 0;
     }
 
     nav .nav-list .closeMenu {
+        /* Schließen-Symbol-Styling: Anzeige, Position und Abstand */
         display: block;
         position: absolute;
         top: 20px;
@@ -130,26 +149,31 @@ nav .icons {
     }
 
     nav .openMenu {
+        /* Menü öffnen Symbol: Anzeige */
         display: block;
     }
 
     nav .nav-list li a:hover {
+        /* Hover-Effekt für Links in der Navigation */
         background: none;
         color: rgb(0, 110, 255);
     }
 
     .icons i {
+        /* Icon-Styling für kleine Bildschirme: Inline-Block und Polsterung */
         display: inline-block;
         padding: 10px;
     }
 
     nav .icons {
+        /* Icons-Styling für kleine Bildschirme: Inline-Block */
         display: inline-block;
     }
 }
 
 /* Main Styles*/
 main {
+    /* Hauptinhalt-Styling: Links und rechts 20% Padding, Blocksatz und Zeilenhöhe */
     padding-left: 20%;
     padding-right: 20%;
     text-align: justify;
@@ -158,11 +182,13 @@ main {
 
 h1,
 h2 {
+    /* Überschriften-Styling: Zentrierte Ausrichtung */
     text-align: center;
 }
 
 /* Footer Styles */
 footer {
+    /* Footer-Styling: Hintergrundfarbe, Textfarbe, Zentrierte Ausrichtung, Polsterung, Überlaufausblenden und Zeilenhöhe */
     background-color: #002648;
     color: white;
     text-align: center;
@@ -173,6 +199,7 @@ footer {
 }
 
 #footer-left {
+    /* Linker Fußzeilenbereich: Linksbündige Ausrichtung, Float und Breite */
     text-align: left;
     float: left;
     width: 33.33%;
@@ -181,6 +208,7 @@ footer {
 }
 
 #footer-center {
+    /* Mittlerer Fußzeilenbereich: Zentrierte Ausrichtung und Inline-Block */
     text-align: center;
     display: inline-block;
     width: 33.33%;
@@ -188,6 +216,7 @@ footer {
 }
 
 #footer-right {
+    /* Rechter Fußzeilenbereich: Rechtsbündige Ausrichtung, Float und Breite */
     text-align: right;
     float: right;
     width: 33.33%;
@@ -198,17 +227,20 @@ footer {
 #footer-left h2,
 #footer-center h2,
 #footer-right h2 {
+    /* Überschriften-Styling für den Footer: Schriftgröße und Ausrichtung */
     font-size: 30px;
     text-align: inherit;
 }
 
 #footer-left p {
+    /* Absatz-Styling für den linken Fußzeilenbereich: Schriftgröße und Zeilenhöhe */
     font-size: 20px;
     line-height: 1;
 }
 
 #icon-facebook,
 #icon-instagram {
+    /* Icon-Styling für Facebook und Instagram: Abstand oben, Zentrierte Ausrichtung, Breite und Höhe */
     margin-top: 10px;
     text-align: center;
     width: 60px;
@@ -216,6 +248,7 @@ footer {
 }
 
 #logo-footer {
+    /* Logo-Styling für den Footer: Breite, Höhe, Inline-Flex-Anzeige und Abstand */
     width: 280px;
     height: 140px;
     display: inline-flex;
@@ -223,50 +256,61 @@ footer {
 }
 
 #copyright {
+    /* Copyright-Styling: Rechtsbündige Ausrichtung, Abstand oben und Schriftgröße */
     text-align: right;
     margin-top: 10px;
     font-size: 20px;
 }
 
-
 @media only screen and (max-width: 1368px) {
+    /* Media Query für Bildschirme bis 1368px Breite */
+
     header {
+        /* Header-Anpassungen: Relative Positionierung und kein Rand */
         position: relative;
         margin: none;
     }
 
     .nav-list {
+        /* Navigation-Anpassungen: Flex-Richtung ändern */
         flex-direction: column;
     }
 
     .nav-list li {
+        /* Listenpunkt-Anpassungen: Margin unten hinzufügen */
         margin-bottom: 20px;
     }
 
     #logo-header {
+        /* Logo-Anpassungen: Höhe und Breite festlegen */
         height: 50px;
         width: 100px;
     }
 }
 
 @media only screen and (max-width: 1024px) {
+    /* Media Query für Bildschirme bis 1024px Breite */
 
     /* Footer-Anpassungen für Tablets */
     #footer-left {
+        /* Linker Fußzeilenbereich-Anpassungen: Linksbündige Polsterung links verringern */
         padding-left: 2%;
     }
 
     #footer-right {
+        /* Rechter Fußzeilenbereich-Anpassungen: Rechtsbündige Polsterung rechts verringern */
         padding-right: 2%;
     }
 
     #icon-facebook,
     #icon-instagram {
+        /* Icon-Anpassungen für Facebook und Instagram: Breite und Höhe verringern */
         width: 50px;
         height: 50px;
     }
 
     #logo-footer {
+        /* Logo-Anpassungen für den Footer: Breite und Höhe verringern, rechtsbündige Float-Anzeige */
         width: 260px;
         height: 130px;
         float: right;
@@ -275,28 +319,33 @@ footer {
     #footer-left h2,
     #footer-center h2,
     #footer-right h2 {
+        /* Überschriften-Anpassungen: Schriftgröße verringern */
         font-size: 20px;
     }
 
     #footer-left p,
     #footer-right p {
+        /* Absatz-Anpassungen: Schriftgröße verringern */
         font-size: 15px;
     }
 
     #footer-right p {
+        /* Rechter Fußzeilenbereich Absatz-Anpassungen: Rechtsbündige Float-Anzeige */
         float: right;
     }
 }
 
 @media only screen and (max-width: 768px) {
+    /* Media Query für Bildschirme bis 768px Breite */
+
     header {
+        /* Header-Anpassungen: Sticky-Position beibehalten */
         position: sticky;
     }
 
-
-
     /* Footer-Anpassungen für Handys und Tablets */
     footer {
+        /* Footer-Anpassungen: Flex-Richtung ändern und Inhalte zentrieren */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -305,32 +354,35 @@ footer {
     #footer-left,
     #footer-center,
     #footer-right {
+        /* Fußzeilenbereich-Anpassungen: Volle Breite, Textzentrierung und Polsterung */
         width: 100%;
         text-align: center;
         padding: 0;
         padding-bottom: 10px;
     }
 
-
-
     #footer-left h2,
     #footer-center h2,
     #footer-right h2 {
+        /* Überschriften-Anpassungen: Schriftgröße erhöhen */
         font-size: 24px;
     }
 
     #footer-left p {
+        /* Linker Fußzeilenbereich Absatz-Anpassungen: Schriftgröße erhöhen und Zeilenhöhe erhöhen */
         font-size: 16px;
         line-height: 1.5;
     }
 
     #icon-facebook,
     #icon-instagram {
+        /* Icon-Anpassungen für Facebook und Instagram: Breite und Höhe verringern */
         width: 40px;
         height: 40px;
     }
 
     #logo-footer {
+        /* Logo-Anpassungen für den Footer: Breite und Höhe verringern, Float aufheben, Textzentrierung aufheben */
         width: 220px;
         height: 110px;
         float: none;
@@ -338,16 +390,16 @@ footer {
     }
 
     #footer-right p {
+        /* Rechter Fußzeilenbereich Absatz-Anpassungen: Float aufheben */
         float: none;
     }
-
 }
 
 /* nav Anpassungen für Handy im Querformat */
 @media only screen and (max-width: 800px) and (max-height: 768px) and (orientation: landscape) {
     nav .nav-list li {
+        /* Listenpunkt-Anpassungen für Querformat-Handys: Schriftgröße verringern und Polsterung */
         font-size: 10px;
         padding: 2px 0;
     }
-
 }

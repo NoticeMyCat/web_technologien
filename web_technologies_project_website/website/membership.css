@@ -1,4 +1,6 @@
-/* Ursprüngliche Styles für die Bilder und den Button beibehalten */
+/* Beibehalten der Ursprünglichen Styles für die Bilder und den Button */
+
+/* Stile für die linke Bildposition */
 .image-left {
     text-align: center;
     float: left;
@@ -7,14 +9,15 @@
     box-sizing: border-box;
 }
 
+/* Stile für die mittlere Bildposition */
 .image-middle {
     text-align: center;
     display: inline-block;
     width: 33.33%;
     vertical-align: middle;
-
 }
 
+/* Stile für die rechte Bildposition */
 .image-right {
     text-align: center;
     float: right;
@@ -23,32 +26,40 @@
     box-sizing: border-box;
 }
 
+/* Stile für die spezifischen Bilder */
 #image-equipment,
 #image-facility,
 #image-coaching {
+    /* Höhe und Breite der Bilder auf 280px festlegen */
     height: 280px;
     width: 280px;
 }
 
+/* Stile für den Anmeldeformular-Button */
 #button-anmeldeformular {
+    /* Breite, Höhe, Schriftgröße, Textausrichtung und Hintergrundfarbe des Buttons festlegen */
     width: 300px;
     height: 50px;
     font-size: 18px;
     text-align: center;
     background-color: #002648;
+    /* Fettschrift, weiße Textfarbe, Innenpolsterung, keine Grenze, abgerundete Ecken und Cursor als Zeiger */
     font-weight: bold;
     color: #fff;
     padding: 15px 20px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    /* Oberer Abstand 30px, unterer Abstand 100px */
     margin-top: 30px;
     margin-bottom: 100px;
 }
 
-/* Responsive Webdesign */
+/* Media Queries für verschiedene Bildschirmgrößen */
+
 @media (max-width: 1468px) {
     main {
+        /* Hauptinhalt-Anpassungen: Links und rechts 200px Polsterung */
         padding-left: 200px;
         padding-right: 200px;
     }
@@ -56,6 +67,7 @@
 
 @media (max-width: 1368px) {
     main {
+        /* Hauptinhalt-Anpassungen: Links und rechts 100px Polsterung */
         padding-left: 100px;
         padding-right: 100px;
     }
@@ -63,6 +75,7 @@
 
 @media (max-width: 1024px) {
     main {
+        /* Hauptinhalt-Anpassungen: Links und rechts 50px Polsterung */
         padding-left: 50px;
         padding-right: 50px;
     }
@@ -70,13 +83,16 @@
 
 @media (max-width: 968px) {
     main {
+        /* Hauptinhalt-Anpassungen: Links und rechts 20px Polsterung */
         padding-left: 20px;
         padding-right: 20px;
     }
 
+    /* Anpassungen für die Bilder */
     #image-equipment,
     #image-facility,
     #image-coaching {
+        /* Höhe und Breite der Bilder auf 250px festlegen */
         height: 250px;
         width: 250px;
     }
@@ -84,6 +100,7 @@
 
 @media (max-width: 768px) {
     main {
+        /* Hauptinhalt-Anpassungen: Links und rechts 50px Polsterung */
         padding-left: 50px;
         padding-right: 50px;
     }
@@ -92,6 +109,7 @@
     .image-left,
     .image-middle,
     .image-right {
+        /* Float auf "none" setzen, volle Breite, zentrierte Ausrichtung, oberer Abstand 20px, unterer Abstand 0 */
         float: none;
         width: 100%;
         text-align: center;
@@ -101,7 +119,8 @@
 
     /* Button zentrieren und den Abstand anpassen */
     #button-anmeldeformular {
-        margin: 30px auto;
+        /* Oberer Abstand 30px, unterer Abstand 0, Display auf "block" setzen */
+        margin: 30px auto 0;
         display: block;
     }
 }
