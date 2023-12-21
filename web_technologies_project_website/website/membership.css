@@ -119,8 +119,9 @@
 
     /* Button zentrieren und den Abstand anpassen */
     #button-anmeldeformular {
-        /* Oberer Abstand 30px, unterer Abstand 0, Display auf "block" setzen */
-        margin: 30px auto 0;
+        /* Oberer Abstand 30px, Display auf "block" setzen */
+        margin: 30px auto;
         display: block;
+        padding-bottom: 20px;
     }
 }

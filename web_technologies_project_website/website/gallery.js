@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     // Initialer Index des Hauptbilds
-    let currentIndex = 0; // Hier wird der Index 4 gesetzt, um das 5. Bild als zentrales Bild anzuzeigen.
+    let currentIndex = 0; // Hier wird der Index 0 gesetzt
 
     // Hauptbild-Element
     const mainImage = document.querySelector('.main-image');
